@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateProgramFile>false</GenerateProgramFile>
+    <isPackable>true</isPackable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <PropertyGroup>
+    <PackageLicenceExpression>MIT</PackageLicenceExpression>
+  </PropertyGroup>
+  
 </Project>
