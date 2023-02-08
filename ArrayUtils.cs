@@ -527,37 +527,37 @@ namespace MyUtilities
 
 
         public static int Product(int[] i){
-            int b = 0;
+            int b = 1;
             foreach(int d in i){
-                b += d;
+                b *= d;
             }
             return b;
         }
         public static double Product(double[] i){
-            double b = 0;
+            double b = 1;
             foreach(double d in i){
-                b += d;
+                b *= d;
             }
             return b;
         }
         public static decimal Product(decimal[] i){
-            decimal b = 0;
+            decimal b = 1;
             foreach(decimal d in i){
-                b += d;
+                b *= d;
             }
             return b;
         }
         public static float Product(float[] i){
-            float b = 0;
+            float b = 1;
             foreach(float d in i){
-                b += d;
+                b *= d;
             }
             return b;
         }
         public static long Product(long[] i){
-            long b = 0;
+            long b = 1;
             foreach(long d in i){
-                b += d;
+                b *= d;
             }
             return b;
         }
