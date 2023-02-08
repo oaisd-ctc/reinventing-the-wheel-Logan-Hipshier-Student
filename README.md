@@ -2,3 +2,26 @@
 
 The nuget package has been published
 (dotnet add package reinventing-the-wheel-Logan-Hipshier-Student --version 1.0.0)
+
+The Utility NuGet package provides methods regarding Arrays Strings and Math that are nornally preloaded into these objects however without utilizing the built in methods.
+The NuGet package was created to provide developers with functional methods that do not implement prebuilt 'out of the box' methods
+
+String Utilis:
+All StringUtils take one string as a parameter and return either a string or an int
+
+StringUtils.ToUpper("banana"); --> BANANA
+StringUtils.ToLower("BANANA"); --> banana
+StringUtils.Length("Hello"); --> 5
+StringUtils.Reverse("Hello") --> olleH
+StringUtils.CountVowels("Hello") --> 2
+StringUtils.CountConsonants("Hello") --> 3
+
+
+MathUtils:
+All MathUtils are overloaded and take 2 numbers as parameters excluding square root and absulote value
+
+MathUtils.Power(4,3); --> 64
+MathUtils.SquareRoot(16); --> 4
+MathUtils.AbsoluteValue(-16); --> 16
+
+
