@@ -229,6 +229,15 @@ namespace MyUtilities
 
 
         //sorts the array into ascending order (int)
+
+///<summary>
+/// returns the array sorted into ascending order
+///</summary> 
+///
+///<param name="i">
+///<returns>
+///
+ ///</returns>
         public static int[] SortAscending(int[] i)
         {
             int count = 0;
@@ -382,6 +391,14 @@ namespace MyUtilities
 
 
         // sorts the array into descending order (int)
+///<summary>
+/// sorts and returns the array in descending order
+///</summary> 
+///
+///<param name="i"> array
+///<returns>
+/// sorted array
+ ///</returns>
         public static int[] SortDescending(int[] i)
         {
             int count = 0;
@@ -535,6 +552,14 @@ namespace MyUtilities
 
 
         // adds a value to the array (int)
+///<summary>
+/// adds a value to the array
+///</summary> 
+///
+///<param name="i"> array
+///<returns>
+/// modded array
+ ///</returns>
         public static int Add(int[] i){
             int b = 0;
             foreach(int d in i){
@@ -577,7 +602,15 @@ namespace MyUtilities
 
 
 
-        // multiplies each value in the array by i (int)
+        
+        ///<summary>
+/// multiplies the array by every value within itself {1,3,5,2} -> 30
+///</summary> 
+///
+///<param name="i"> array
+///<returns>
+/// product of array
+ ///</returns>
         public static int Product(int[] i){
             int b = 1;
             foreach(int d in i){
@@ -585,7 +618,6 @@ namespace MyUtilities
             }
             return b;
         }
-         // multiplies each value in the array by i (double)
         public static double Product(double[] i){
             double b = 1;
             foreach(double d in i){
@@ -593,7 +625,7 @@ namespace MyUtilities
             }
             return b;
         }
-         // multiplies each value in the array by i(decimal)
+         
         public static decimal Product(decimal[] i){
             decimal b = 1;
             foreach(decimal d in i){
@@ -601,7 +633,7 @@ namespace MyUtilities
             }
             return b;
         }
-         // multiplies each value in the array by i (float)
+         
         public static float Product(float[] i){
             float b = 1;
             foreach(float d in i){
@@ -609,7 +641,7 @@ namespace MyUtilities
             }
             return b;
         }
-         // multiplies each value in the array by i (long)
+       
         public static long Product(long[] i){
             long b = 1;
             foreach(long d in i){
