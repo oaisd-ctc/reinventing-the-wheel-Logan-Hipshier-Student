@@ -18,20 +18,33 @@ namespace MyUtilities
         }
         public static double NthRoot(long A, int N)
         {
-            return NthRoot(A, N);
+            double epsilon = 0.00001d;//
+            double n = N;
+            double x = A / n;
+            while (Math.Abs(A - Power(x, N)) > epsilon)
+            {
+                x = (1.0d / n) * ((n - 1) * x + (A / (Power(x, N - 1))));
+            }
+            return x;
         }
-        public static double NthRoot(decimal A, int N)
+        public static decimal NthRoot(decimal A, int N)
         {
             return NthRoot(A, N);
         }
-        public static double NthRoot(int A, int N)
+        public static double NthRoot(int n, int N)
         {
-            return NthRoot(A, N);
-        }
-        public static double NthRoot(float A, int N)
-        {
-            return NthRoot(A, N);
-        }
+            int x = n;
+            int y = 1;
+            while (x > y) {
+                x = (x + y) / 2;
+                y = n / x;
+            }
+            return (uint)x;
+            }
+            public static float NthRoot(float A, int N)
+            {
+                return NthRoot(A, N);
+            }
 
 
         public static double AbsoluteValue(double n)
@@ -42,9 +55,13 @@ namespace MyUtilities
             }
             return n;
         }
-        public static double AbsoluteValue(int n)
+        public static int AbsoluteValue(int n)
         {
-            return AbsoluteValue(n);
+            if (n < 0)
+            {
+                return (n * (-1));
+            }
+            return n;
         }
         public static double AbsoluteValue(float n)
         {
@@ -81,13 +98,11 @@ namespace MyUtilities
             if (exponent == 0)
             {
                 return (1);
-            }
-            else if (exponent < 0)
+            }else if (exponent < 0)
             {
                 ans2 = 1 / operation(num, exponent);
                 return (ans2);
-            }
-            else if (exponent < 1)
+            }else if (exponent < 1)
             {
                 Fraction x = Fraction.RealToFraction(exponent, .01);
                 int numerator = x.getNumerator();
@@ -95,10 +110,7 @@ namespace MyUtilities
                 double z = operation(num, numerator);
                 return (NthRoot(z, denominator));
 
-            }
-
-
-            else
+            }else
             {
                 ans = operation(num, exponent);
                 return (ans);
@@ -107,20 +119,95 @@ namespace MyUtilities
 
         public static int Power(int num, int exponent)
         {
-            return MathUtils.Power(num, exponent);
+                int count = 1;
+                int rvalue = num;
+                while (count < exponent)
+                {
+                    rvalue *= num;
+                    count++;
+                }
+                return rvalue;
         }
 
-        public static float Power(float num, int exponent)
+        public static float Power(float num, float exponent)
         {
-            return MathUtils.Power(num, exponent);
+            float operation(float num, float exponent)
+            {
+                int count = 1;
+                float rvalue = num;
+                while (count < exponent)
+                {
+                    rvalue *= num;
+                    count++;
+                }
+                return rvalue;
+            }
+
+
+            float ans;
+            float ans2;
+            if (exponent == 0)
+            {
+                return (1);
+            }else if (exponent < 0)
+            {
+                ans2 = 1 / operation(num, exponent);
+                return (ans2);
+            }else if (exponent < 1)
+            {
+                Fraction x = Fraction.RealToFraction(exponent, .01);
+                int numerator = x.getNumerator();
+                int denominator = x.getDenominator();
+                float z = operation(num, numerator);
+                return (NthRoot(z, denominator));
+
+            }else
+            {
+                ans = operation(num, exponent);
+                return (ans);
+            }
         }
 
-        public static long Power(long num, int exponent)
+        public static double Power(long num, long exponent)
         {
-            return MathUtils.Power(num, exponent);
+            long operation(long num, long exponent)
+            {
+                int count = 1;
+                long rvalue = num;
+                while (count < exponent)
+                {
+                    rvalue *= num;
+                    count++;
+                }
+                return rvalue;
+            }
+
+
+            long ans;
+            long ans2;
+            if (exponent == 0)
+            {
+                return (1);
+            }else if (exponent < 0)
+            {
+                ans2 = 1 / operation(num, exponent);
+                return (ans2);
+            }else if (exponent < 1)
+            {
+                Fraction x = Fraction.RealToFraction(exponent, .01);
+                int numerator = x.getNumerator();
+                int denominator = x.getDenominator();
+                long z = operation(num, numerator);
+                return (NthRoot(z, denominator));
+
+            }else
+            {
+                ans = operation(num, exponent);
+                return (ans);
+            }
         }
 
-        public static decimal Power(decimal num, int exponent)
+        public static decimal Power(decimal num, decimal exponent)
         {
             return MathUtils.Power(num, exponent);
         }
@@ -236,19 +323,19 @@ namespace MyUtilities
 
 
         public static double Divide(int y, int x){
-            return y - x;
+            return y / x;
         }
         public static double Divide(float y, float x){
-            return y - x;
+            return y / x;
         }
         public static decimal Divide(decimal y, decimal x){
-            return y - x;
+            return y / x;
         }
         public static double Divide(double y, double x){
-            return y - x;
+            return y / x;
         }
         public static double Divide(long y, long x){
-            return y - x;
+            return y / x;
         }
 
 

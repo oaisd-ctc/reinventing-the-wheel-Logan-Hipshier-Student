@@ -30,4 +30,5 @@ public class runner
         Console.WriteLine();
         Console.WriteLine(ArrayUtils.Add(i));
         Console.WriteLine(ArrayUtils.Product(i));
+        Console.WriteLine(MathUtils.Power(3.4f,3.6f));
     }}
