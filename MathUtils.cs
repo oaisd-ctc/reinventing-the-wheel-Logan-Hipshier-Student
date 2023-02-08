@@ -5,7 +5,15 @@ namespace MyUtilities
     public static class MathUtils
     {
 
-        //returns the nth root of a number 
+        ///<summary>
+        ///returns the nth root of a number (double)
+        ///</summary> 
+        ///
+        ///<param name="A"> double
+        ///<param name="N"> int
+        ///<returns>
+        ///the nth root of A
+        ///</returns> 
         public static double NthRoot(double A, int N)
         {
             double epsilon = 0.00001d;//
@@ -55,7 +63,14 @@ namespace MyUtilities
                 return NthRoot(A, N);
             }
 
-        //returns the absolute value of a number
+        ///<summary>
+        ///returns the absolute value of a number
+        ///</summary> 
+        ///
+        ///<param name="n"> double
+        ///<returns>
+        ///the absolute value
+        ///</returns> 
         public static double AbsoluteValue(double n)
         {
             if (n < 0)
@@ -94,7 +109,15 @@ namespace MyUtilities
         }
 
 
-        //returns the value of num to the exponent
+        ///<summary>
+        ///returns num to the power of exponent
+        ///</summary> 
+        ///
+        ///<param name="num"> double
+        ///<param name="exponent"> double
+        ///<returns>
+        ///num to the power of exponent
+        ///</returns> 
         public static double Power(double num, double exponent)
         {
 
@@ -236,6 +259,15 @@ namespace MyUtilities
 
 
 
+        ///<summary>
+        ///compares two inputted values and returns the smaller of the two
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///the smaller value
+        ///</returns> 
         public static int Min(int y, int x){
             if(x > y){
                 return y;
@@ -243,6 +275,7 @@ namespace MyUtilities
                 return x;
             }
         }
+        ///compares two inputted values and returns the smaller of the two
         public static decimal Min(decimal y, decimal x){
             if(x > y){
                 return y;
@@ -250,6 +283,7 @@ namespace MyUtilities
                 return x;
             }
         }
+        ///compares two inputted values and returns the smaller of the two
         public static double Min(double y, double x){
             if(x > y){
                 return y;
@@ -257,6 +291,7 @@ namespace MyUtilities
                 return x;
             }
         }
+        ///compares two inputted values and returns the smaller of the two
         public static float Min(float y, float x){
             if(x > y){
                 return y;
@@ -264,6 +299,7 @@ namespace MyUtilities
                 return x;
             }
         }
+        ///compares two inputted values and returns the smaller of the two
         public static long Min(long y, long x){
             if(x > y){
                 return y;
@@ -273,6 +309,15 @@ namespace MyUtilities
         }
 
 
+        ///<summary>
+        ///compares two inputted values and returns the larger of the two
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///the larger value
+        ///</returns> 
         public static int Max(int y, int x){
             if(x > y){
                 return x;
@@ -280,6 +325,7 @@ namespace MyUtilities
                 return y;
             }
         }
+        ///compares two inputted values and returns the larger of the two
         public static float Max(float y, float x){
             if(x > y){
                 return x;
@@ -287,6 +333,7 @@ namespace MyUtilities
                 return y;
             }
         }
+        ///compares two inputted values and returns the larger of the two
         public static decimal Max(decimal y, decimal x){
             if(x > y){
                 return x;
@@ -294,6 +341,7 @@ namespace MyUtilities
                 return y;
             }
         }
+        ///compares two inputted values and returns the larger of the two
         public static double Max(double y, double x){
             if(x > y){
                 return x;
@@ -301,6 +349,7 @@ namespace MyUtilities
                 return y;
             }
         }
+        ///compares two inputted values and returns the larger of the two
         public static long Max(long y, long x){
             if(x > y){
                 return x;
@@ -309,7 +358,15 @@ namespace MyUtilities
             }
         }
 
-        // returns the sum of x and y
+        ///<summary>
+        ///adds together two inputted integers
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///the sum of x and y
+        ///</returns> 
         public static int Add(int y, int x){
             return x + y;
         }
@@ -334,8 +391,16 @@ namespace MyUtilities
             return x + y;
         }
 
-        // returns the value of y-x
 
+        ///<summary>
+        ///subtracts x from y
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///y-x
+        ///</returns> 
         public static int Subtract(int y, int x){
             return y - x;
         }
@@ -356,7 +421,15 @@ namespace MyUtilities
             return y - x;
         }
 
-        //returns the value of y/x
+        ///<summary>
+        ///divides x by y
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///y/x
+        ///</returns> 
         public static double Divide(int y, int x){
             return y / x;
         }
@@ -381,24 +454,33 @@ namespace MyUtilities
             return y / x;
         }
 
-        //returns the quotient of y and x
+        ///<summary>
+        ///multiplies together two inputted integers
+        ///</summary> 
+        ///
+        ///<param name="y"> int
+        ///<param name="x"> int
+        ///<returns>
+        ///the product of x and y
+        ///</returns> 
         public static int Multiply(int y, int x){
             return x * y;
         }
-                //returns the quotient of y and x
+                //returns the product of y and x
 
         public static decimal Multiply(decimal y, decimal x){
             return x * y;
         }
+        //returns the product of y and x
         public static double Multiply(double y, double x){
             return x * y;
         }
-                //returns the quotient of y and x
+                //returns the product of y and x
 
         public static long Multiply(long y, long x){
             return x * y;
         }
-                //returns the quotient of y and x
+                //returns the product of y and x
 
         public static float Multiply(float y, float x){
             return x * y;
