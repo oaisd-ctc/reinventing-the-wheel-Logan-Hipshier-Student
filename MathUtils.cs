@@ -5,6 +5,7 @@ namespace MyUtilities
     public static class MathUtils
     {
 
+        //returns the nth root of a number 
         public static double NthRoot(double A, int N)
         {
             double epsilon = 0.00001d;//
@@ -16,6 +17,8 @@ namespace MyUtilities
             }
             return x;
         }
+                //returns the nth root of a number 
+
         public static double NthRoot(long A, int N)
         {
             double epsilon = 0.00001d;//
@@ -27,10 +30,14 @@ namespace MyUtilities
             }
             return x;
         }
+                //returns the nth root of a number 
+
         public static decimal NthRoot(decimal A, int N)
         {
             return NthRoot(A, N);
         }
+
+                //returns the nth root of a number 
         public static double NthRoot(int n, int N)
         {
             int x = n;
@@ -41,12 +48,14 @@ namespace MyUtilities
             }
             return (uint)x;
             }
+                   
+             //returns the nth root of a number 
             public static float NthRoot(float A, int N)
             {
                 return NthRoot(A, N);
             }
 
-
+        //returns the absolute value of a number
         public static double AbsoluteValue(double n)
         {
             if (n < 0)
@@ -55,6 +64,8 @@ namespace MyUtilities
             }
             return n;
         }
+                //returns the absolute value of a number
+
         public static int AbsoluteValue(int n)
         {
             if (n < 0)
@@ -63,20 +74,27 @@ namespace MyUtilities
             }
             return n;
         }
+                //returns the absolute value of a number
+
         public static double AbsoluteValue(float n)
         {
             return AbsoluteValue(n);
         }
+                //returns the absolute value of a number
+
         public static double AbsoluteValue(decimal n)
         {
             return AbsoluteValue(n);
         }
+                //returns the absolute value of a number
+
         public static double AbsoluteValue(long n)
         {
             return AbsoluteValue(n);
         }
 
 
+        //returns the value of num to the exponent
         public static double Power(double num, double exponent)
         {
 
@@ -117,6 +135,7 @@ namespace MyUtilities
             }
         }
 
+//returns the value of num to the exponent
         public static int Power(int num, int exponent)
         {
                 int count = 1;
@@ -129,6 +148,7 @@ namespace MyUtilities
                 return rvalue;
         }
 
+//returns the value of num to the exponent
         public static float Power(float num, float exponent)
         {
             float operation(float num, float exponent)
@@ -167,6 +187,7 @@ namespace MyUtilities
                 return (ans);
             }
         }
+        //returns the value of num to the exponent
 
         public static double Power(long num, long exponent)
         {
@@ -207,6 +228,7 @@ namespace MyUtilities
             }
         }
 
+//returns the value of num to the exponent
         public static decimal Power(decimal num, decimal exponent)
         {
             return MathUtils.Power(num, exponent);
@@ -287,70 +309,97 @@ namespace MyUtilities
             }
         }
 
-
+        // returns the sum of x and y
         public static int Add(int y, int x){
             return x + y;
         }
+                // returns the sum of x and y
+
         public static decimal Add(decimal y, decimal x){
             return x + y;
         }
+                // returns the sum of x and y
+
         public static double Add(double y, double x){
             return x + y;
         }
+                // returns the sum of x and y
+
         public static float Add(float y, float x){
             return x + y;
         }
+                // returns the sum of x and y
+
         public static long Add(long y, long x){
             return x + y;
         }
 
+        // returns the value of y-x
 
         public static int Subtract(int y, int x){
             return y - x;
         }
+         // returns the value of y-x
         public static decimal Subtract(decimal y, decimal x){
             return y - x;
         }
+         // returns the value of y-x
         public static double Subtract(double y, double x){
             return y - x;
         }
+         // returns the value of y-x
         public static float Subtract(float y, float x){
             return y - x;
         }
+         // returns the value of y-x
         public static long Subtract(long y, long x){
             return y - x;
         }
 
-
+        //returns the value of y/x
         public static double Divide(int y, int x){
             return y / x;
         }
+        //returns the value of y/x
+
         public static double Divide(float y, float x){
             return y / x;
         }
+        //returns the value of y/x
+
         public static decimal Divide(decimal y, decimal x){
             return y / x;
         }
+        //returns the value of y/x
+
         public static double Divide(double y, double x){
             return y / x;
         }
+        //returns the value of y/x
+
         public static double Divide(long y, long x){
             return y / x;
         }
 
-
+        //returns the quotient of y and x
         public static int Multiply(int y, int x){
             return x * y;
         }
+                //returns the quotient of y and x
+
         public static decimal Multiply(decimal y, decimal x){
             return x * y;
         }
         public static double Multiply(double y, double x){
             return x * y;
         }
+                //returns the quotient of y and x
+
         public static long Multiply(long y, long x){
             return x * y;
         }
+                //returns the quotient of y and x
+
         public static float Multiply(float y, float x){
             return x * y;
         }
