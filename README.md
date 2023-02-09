@@ -23,5 +23,23 @@ All MathUtils are overloaded and take 2 numbers as parameters excluding square r
 MathUtils.Power(4,3); --> 64
 MathUtils.SquareRoot(16); --> 4
 MathUtils.AbsoluteValue(-16); --> 16
+MathUtils.Min(11,22); --> 11
+MathUtils.Max(11,22); --> 22
+MathUtils.Add(2,2); --> 4
+MathUtils.Subtract(3,2); --> 1
+MathUtils.Divide(4,2); --> 2
+MathUtils.Divide(4,2); --> 8
+
+ArrayUtils:
+All ArrayUtils are overloaded and accept an array as parameters
+
+int[] i {1,2,3}
+ArrayUtils.Average(i) -->2
+ArrayUtils.Max(i) --> 3
+ArrayUtils.Min(i) --> 1
+ArrayUtils.SortAscending(i) --> 1,2,3
+ArrayUtils.SortDescending(i) --> 3,2,1
+ArrayUtils.Sum(i) --> 6
+ArrayUtils.Product(i) --> 6
 
 
